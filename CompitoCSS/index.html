@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+        body{
+            display: grid;
+            margin:0;
+            padding:0;
+            background-color: whitesmoke;
+            grid-template-columns: 3fr 150px;
+            grid-template-rows: 1fr 9fr;
+            grid-template-areas: "header header"
+            "section aside";
+            font-family: 'Inter', sans-serif;
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            background-color: red;
+            grid-area: header;
+            justify-content: center;
+            text-align: center;
+            border-bottom: .5em solid tomato;
+        }
+        section{
+            grid-area: section;
+            height: 100%;
+        }
+        aside{
+            grid-area: aside;
+            background-color: tomato;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        h2{
+            text-align: center;
+            animation: 1s infinite alternate animazioneH2;
+        }
+        @keyframes animazioneH2{
+            0%{
+                color:red;
+            }10%{
+                color:orange;
+            }20%{
+                color:yellow;
+            }30%{
+                color:greenyellow;
+            }40%{
+                color:yellowgreen;
+            }50%{
+                color:lightgreen;
+            }60%{
+                color:green;
+            }70%{
+                color:purple;
+            }80%{
+                color:blueviolet;
+            }90%{
+                color:blue;
+            }100%{
+                color:black;
+            }
+        }
+        p + p{
+            font-size: 2em;
+        }
+
+        aside::after{
+            content:"";
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transform: translate(100%);
+            background-color: yellow;
+            filter: grayscale(50%);/*sarebbe stato più utile su un'immagine ma dato che non posso mi sono arrangiato*/
+            padding:0;
+            margin:0;
+            position:relative;
+        }
+        aside::before{
+            content:"";
+            animation: 2s infinite alternate animazionePallina1;
+            padding: 0;
+            margin:0;
+            position:relative;
+        }
+        @keyframes animazionePallina1{
+            from{
+                flex-grow: 0;
+            }to{
+                flex-grow: 1;
+            }
+        }
+        @media screen and (max-width: 500px){
+            body{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 150px 8fr;
+                grid-template-areas: "header"
+                "aside"
+                "section";
+                
+            }
+            aside{
+                flex-flow: row nowrap;
+            }
+            aside::after{
+                transform: translateY(100%);
+            }
+        }
+        h1{
+            transition: 1s;
+            text-shadow: yellow 2px 2px 10px;
+        }
+        h1:hover{
+            letter-spacing: 1ex;
+        }
+        a:link{
+            color:black;
+        }
+        a:visited{
+            color:black;
+            
+        }
+        a{
+            background-color:yellow;
+            transition: .5s;
+            padding:1ex;
+        }
+        a:hover{
+            border-radius: 25%;
+        }
+        a + a + a + a:hover{
+            color:blue;
+        }
+        a[href]{
+            background-color: greenyellow;
+        }
+    </style>
+    <title>Compito CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Titolo</h1>
+        <nav>
+            <a href="">non serviamo</a>
+            <a>ad un</a>
+            <a>bel</a>
+            <a>niente</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Sottotitolo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor iaculis est, nec aliquam enim. Aliquam vel est a enim ornare imperdiet ut at nisl. Sed ut vestibulum augue. Curabitur viverra lectus non lacus consectetur, vel venenatis mauris venenatis. Nulla ut faucibus enim. Suspendisse mollis congue neque, et rhoncus nunc. In non malesuada neque. Donec tempus venenatis ligula, sit amet vulputate arcu finibus sit amet.</p>
+        <p>Nullam et metus molestie mi accumsan eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce fringilla ac metus eu imperdiet. Aenean posuere diam consequat ultricies aliquet. Quisque at mi est. Nullam placerat sapien eu facilisis condimentum. Integer non est tempor, pharetra elit ac, suscipit ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam sit amet tellus sem. Nam finibus tincidunt diam nec rhoncus. Quisque placerat ultrices libero vel ornare. Aliquam lacinia, nunc quis blandit rutrum, urna diam pretium neque, ac lacinia mauris neque ut diam. Phasellus at dignissim dui. Integer sed est a sem mollis lobortis.</p>
+    </section>
+    <aside>
+
+    </aside>
+</body>
+</html>

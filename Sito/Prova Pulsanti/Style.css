@@ -1,0 +1,21 @@
+div.lateralbar {
+    background: rgb(80, 140, 140); /*choose color*/
+    width: 20vh; 
+    height: 90vh;
+    border: rgb(90, 150, 150) solid;/*choose color*/
+    orientation: portrait;
+    display: none;
+}
+
+/*div.BarButton {
+    margin: 10px;
+}*/
+
+body{
+    background: cadetblue;/*choose color/image */
+    margin: 0cm;
+}
+
+img#button{
+    width: 100%;
+}

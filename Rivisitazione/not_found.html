@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="not_found.css">
+    <link rel="shortcut icon" href="Immagini/404.svg" type="image/x-icon">
+    <title>Pagina non trovata</title>
+</head>
+<body>
+    <div>
+        <img src="Immagini/404.svg" alt="">
+        <h1>Errore 404</h1>
+        <p id="testo"></p><br>
+        <button onclick="window.open('/', '_self')">Torna alla home</button>
+    </div>
+    <script>
+        let lista = ["Bro mi sa che stai cercando male...", 
+        "Mi dispiace la tua pagina è su un altro sito", 
+        "Hai perso la corretta via, mi dispiace", 
+        "Torna alla home se non vuoi perderti in questi vicoli bui",
+        "Qui non c'è niente da vedere, fila via!"];
+        document.getElementById("testo").innerText = lista[Math.floor(Math.random() * lista.length)];
+    </script>
+</body>
+</html>

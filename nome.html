@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function scrivi(stringa){
+var fs, a, ForAppending;
+ForAppending = 8;
+fs = new ActiveXObject("Scripting.FileSystemObject");
+a = fs.OpenTextFile("a.txt", ForAppending, false);
+a.Write(stringa);
+a.WriteBlankLines(1);
+a.Close();
+campo1.value=""
+campo1.value=stringa
+}
+</script>
+</head>
+<body>
+<textarea cols=25 rows=5 name=testo></textarea>
+<input type=button value="Scrivi" onClick="scrivi(testo.value)"><br><br>
+nel file è stato scritto: <input type=text name=campo1>
+</body>
+</html>

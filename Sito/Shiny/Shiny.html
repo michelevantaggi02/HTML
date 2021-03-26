@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shiny hunting calculator</title>
+</head>
+<body><center>
+    <script src="script.js"></script>
+    <button onclick="reset();">Reset</button><br>
+    <select name="metodo">
+        <option id="Random">Incontri random</option>
+        <option id="sos">Chiamate SOS</option>
+        <option id="masuda">Metodo masuda</option>
+    </select><br>
+    Nota: il soft reset vale come incontri random<br>
+    <input type="checkbox" id="charm">Cromamuleto<br>
+    <button onclick="aggiorna();">Aggiorna</button><br>
+    <button onclick="piu();">+1</button>    <button onclick="meno();">-1</button>
+    <p id="risulato" style="font-size:300%">0</p><br>
+    Possibilita':
+    <p id="prob" style="font-size:300%">1/4096</p>
+</center>
+</body>
+</html>

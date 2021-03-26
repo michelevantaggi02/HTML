@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+  <title>Stringhe</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>Nome</td>
+      <td><input type="text" id="nome"></td>
+    </tr>
+    <tr>
+      <td>Cognome</td>
+      <td><input type="text" id="Cognome"></td>
+    </tr>
+    <tr>
+    <td>Età</td>
+    <td><input type="text" pattern="\d*" id="eta" size="3" maxlength="3"></td>
+    </tr>
+  </table>
+  <input type="button" id="btn_ok" value="OK">
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+  /*function cambia_cognome()
+  {
+    $("#Cognome").val("Vantaggi");
+  }
+
+  $("#Cognome").blur(cambia_cognome);*/
+$(function(){
+  function isUpperCaseString(stringa){
+    if(stringa===stringa.toUpperCase()){return true;}
+    else {return false;}
+  }
+
+  function maiuscole(){
+    var cognome= String($("#Cognome").val());
+    var nome= String($("#nome").val());
+    console.log(isUpperCaseString(nome) + " " + nome.toUpperCase());
+    if(isUpperCaseString(nome)){
+      $("#Cognome").val(cognome.toUpperCase());
+    }
+  }
+
+    $("#btn_ok").click(maiuscole());
+    $("#Cognome").blur(maiuscole());
+});
+
+
+  </script>
+</body>

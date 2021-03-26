@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Minigioco</title>
+    <style></style>
+</head>
+<body style="font-size: 200%" >
+    <script src="Start.js"></script>
+    <center>
+            <input type="checkbox" id="ban"><font color="red">Bandito</font><br>
+        <input type="checkbox" id="shiny">Shiny     
+        <input type="checkbox" id="legge">Leggendario          
+        <input type="checkbox" id="uc">Ultracreatura<br>
+        <label>Evoluzione
+        <select name="evo">
+            <option id="base">Base</option>
+            <option id="prima">Prima evoluzione</option>
+            <option id="finale">Evoluzione finale</option>
+        </select></label>
+        <label>Livello
+            <input type="number"  id="lv">
+        </label>
+    </center>
+    <center><button onclick="load();">Aggiorna</button><br>
+        <button onclick="reset();">Reset</button>
+    <p id="lista" style="font-size: 400%" >0</center>
+    
+
+</body>
+</html>

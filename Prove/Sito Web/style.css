@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+    padding: 0;
+    margin: 0;
+}
+#testo{
+    margin :0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: large;
+    background-color: blue;
+    border-style: solid;
+    border-color: #0000aa;
+    padding :5%;
+}

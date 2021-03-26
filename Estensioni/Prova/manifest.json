@@ -1,0 +1,21 @@
+{
+    "name": "Meet controller",
+    "version": "1.0",
+    "description": "Certe volte salva la vita.",
+    "permissions": ["storage", "declarativeContent", "notifications","tabs"],
+    "background": {
+      "scripts": ["script.js"],
+      "persistent": false
+    },
+    "page_action": {
+        "default_title": "Meet controller",      
+        "default_popup": "popup.html" ,
+        "default_icon":"icon.png"      
+      },
+      "content_scripts": [{
+        "js": ["modifica.js"],
+        "matches": ["https://meet.google.com/*-*-*"]
+      }],
+      
+    "manifest_version": 2
+  }

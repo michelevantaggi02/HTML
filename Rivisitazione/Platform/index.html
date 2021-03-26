@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Mario</title>
+    <link rel="icon" href="immagini/goomba.png">
+    <link rel="stylesheet" href="stile.css">
+    <script src="script.js"></script>
+</head>
+<body >
+    <div id="menu">
+        <button onclick="carica()">Gioca</button>
+    </div>
+    <div id="gioco" style="display: none;">
+        <audio src="audio/Super_Mario_Bros_Soundtrack.mp3" autoplay loop id="canzone"></audio>
+        <audio id="effettoSonoro">
+            <source id="sorgenteEffetto" src="" type="audio/wav">
+        </audio>
+        <div id="personaggio"></div>
+        <div id="piano"></div>
+        <p id="punteggio">0</p>
+    </div>
+    <div id="gameOver">
+        <h1>Game over</h1>
+        <p id="punteggioFinale">Punteggio:</p>
+        <p>Inserisci il tuo nome</p>
+        <input type="text" name="" id="nome"><br>
+        <ol id="listaCampioni">
+        </ol>
+        <button onclick="restart()">Rigioca</button>
+    </div>
+</body>
+</html>

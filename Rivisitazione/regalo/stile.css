@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 10%;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+.pallina{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url("rose.png");
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    /*filter: hue-rotate(600deg);*/
+}
+span{
+    font-size: 2em;
+    color:black;
+    transition: 1s;
+}
+.chiaro{
+    color:white;
+}
+h1, h2{
+    text-align: center;
+    color:black;
+    transition: 2s;
+    font-size: 200%;
+}
+h2{
+    text-align: right;
+}
+h1.completato, h2.completato{
+    color:white;
+}
+img{
+    width: 40%;
+    position: absolute;
+    display: none;
+}
+#immagine1{
+    transform: rotate(40deg);
+    bottom: 20px;
+    left: -10px;
+    
+}
+#immagine2{
+    transform: rotate(-20deg);
+    bottom: 30px;
+    width: 30%;
+    right: -200px;
+}
+#immagine3{
+    transform: rotate(30deg);
+    bottom: 20%;
+    right: -20px;
+}

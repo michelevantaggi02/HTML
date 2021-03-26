@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes type="typical italian dishes">
+    <recipe name="carbonara">
+        <description>
+            The carbonara is a typical italian dish, this recipe is made for you
+            by the chefs:
+            Michele Vantaggi
+            Cristian Morelli
+            Luca Biagiotti
+        </description>
+        <ingredients>
+            <ingredient>
+                <name>Spaghetti</name>
+                <amount>500g</amount>
+            </ingredient>
+            <ingredient>
+                <name>Egg</name>
+                <amount>5</amount>
+            </ingredient>
+            <ingredient>
+                <name>Pig cheek</name>
+                <amount>200g</amount>
+            </ingredient>
+            <ingredient>
+                <name>Black pepper</name>
+                <amount> q.s.</amount>
+            </ingredient>
+            <ingredient>
+                <name>Salt</name>
+                <amount> q.s.</amount>
+            </ingredient>
+            <ingredient>
+                <name>Grated Parmesan</name>
+                <amount> 30g</amount>
+            </ingredient>
+            <ingredient>
+                <name>Grated Pecorino cheese</name>
+                <amount> 90g</amount>
+            </ingredient>
+        </ingredients>
+        <creation>
+            <action type="preparation">Cut pig cheek</action>
+            <action type="preparation">Divide 4 yolks</action>
+            <action type="preparation">Beat the yolks and add the last egg</action>
+            <action type="preparation">Add salt and pepper to the yolks</action>
+            <action type="preparation">Add parmesan and Pecorino cheese to the yolks and beat to form a cream</action>
+            <action type="cook" duration="3m">Heat the pig cheek</action>
+            <action type="preparation">Add the cheek to the cream</action>
+            <action type="preparation">Boil water for the pasta</action>
+            <action type="cook" duration="10m">Cook spaghetti</action>
+            <action type="cook" duration="1m">Heat the cream a little</action>
+            <action type="season">Drain the pasta and add the cream</action>
+            <action type="serve">Serve still hot</action>
+        </creation>
+    </recipe>
+</recipes>

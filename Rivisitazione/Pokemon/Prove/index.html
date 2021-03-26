@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        /*$.getJSON("https://www.pokemon.com/us/api/pokedex", function(data){
+            console.log(data);
+        })*/
+        var myUrl = 'https://www.pokemon.com/it/api/pokedex';
+//  But if you make it from a browser, then it will work without problem ...
+
+// However to make it work, we are going to use the cors-anywhere free service to bypass this
+var proxy = 'https://cors-anywhere.herokuapp.com/';
+
+$.ajax({
+    // The proxy url expects as first URL parameter the URL to be bypassed
+    // https://cors-anywhere.herokuapp.com/{my-url-to-bypass}
+    url: proxy + myUrl,
+    complete:function(data){
+        console.log(data.responseJSON);
+    },
+    error: function(){
+        console.log("errore");
+    }
+});
+    </script>
+</body>
+
+</html>

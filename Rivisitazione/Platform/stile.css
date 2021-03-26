@@ -1,0 +1,129 @@
+@font-face {
+    font-family: fontMario;
+    src: url(font/prstartk.ttf);
+}
+
+.bandiera{
+    height: 350px;
+    width: 50px;
+    position: absolute;
+    background-size: cover;
+    background-image: url("immagini/bandiera.png");
+    bottom:50px;
+}
+.castello{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    background-image: url("immagini/castello.png");
+    bottom:50px;
+    background-size: cover;
+    z-index: -1;
+}
+#personaggio{
+    height: 67px;
+    width: 50px;
+    position: absolute;
+    bottom: 50px;
+    overflow: hidden;
+    
+}
+#piano{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("immagini/piano.png");
+    background-repeat: repeat-x;
+    height: 50px;
+    width: 200vw;
+    background-size: contain;
+    margin:0;
+}
+body{
+    background-image: url("immagini/sfondo.jpg");
+    background-size: cover;
+    overflow: hidden;
+    font-family: "fontMario", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.blocchetto{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    background-image: url("immagini/piano.png");
+    bottom: 50px;
+    background-size: contain;
+}
+.nemico{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    background-image: url("immagini/goomba.png");
+    bottom: 50px;
+    background-size: contain;
+}
+
+#punteggio{
+    position: absolute;
+    right: 0;
+    color:white;
+    -webkit-text-stroke: 1px black;
+    margin: 1em;
+}
+button{
+    font-family: "fontMario", sans-serif;
+    font-size: 2em;
+    border: 10px solid black;
+    background-color: #b14c08;
+    padding: .5em;
+}
+button:hover, button:focus{
+    border:10px solid white;
+    color:white;
+}
+#menu{
+    text-align: center;
+    justify-content: center;
+}
+#iconaPunteggio{
+    color:white;
+    -webkit-text-stroke: 1px black;
+    position: absolute;
+    font-size: 70%;
+    width:80px;
+    text-align: center;
+}
+#gameOver{
+    text-align: center;
+    color:white;
+    justify-content: center;
+    background-color: black;
+    display: none;
+    margin: 0;
+}
+input{
+    background-color: black;
+    border:5px solid white;
+    text-align: center;
+    color: white;
+    font-family: "fontMario";
+    font-size: 1rem;
+}
+ol{
+    text-align: center;
+    list-style-position: inside ;
+}
+li{
+    text-align: center;
+}
+.bloccoRandom{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    background-image: url("immagini/bloccoRandom.png");
+    bottom: 50px;
+    background-size: contain;
+}

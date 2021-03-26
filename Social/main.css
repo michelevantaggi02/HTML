@@ -1,0 +1,64 @@
+
+body{
+    padding: 0%;
+    margin:0%;
+    background-image: url("http://www.iisgubbio.gov.it/wp-content/themes/grandcollege_v1-08/images/pattern/pattern-1.png");
+    background-repeat: repeat;
+}
+
+.opt-btn{
+    width: 10vw;
+    height: 10vh;
+    align-content:center;
+    align-self: flex-start; 
+}
+
+.profile-opt{
+    display: block;
+}
+
+.profile-btn{
+    left: 5px;
+    top: 5px;
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+    border-color: none;
+    border-width: 0px;
+    border-color: none;
+    background-image: url("Cattura.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relatives;
+}
+
+.profile-btn:hover{
+    cursor: pointer;
+}
+
+.title-bar{
+    text-align: center;
+    margin: 0%;
+    position: inherit;
+}
+
+.top-bar{
+    width:100%;
+    height: 60px;
+    margin: 0px;
+    padding: 0%;
+    background-color: #D4B804;
+}
+.post{
+    text-align: center;
+    transform: translateX(50%);
+    width:50%;
+    border-style: outset;
+    background-color: beige;
+}
+.description{
+    margin: 0;
+    font-size: 150%;
+}
+.image{
+}

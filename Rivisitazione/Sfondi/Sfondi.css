@@ -1,0 +1,116 @@
+body{
+    margin:0;
+    padding: .5em;
+    background-color:  rgb(48, 48, 48);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+span >img{
+    height: 25vh;
+    transition: .7s;
+}
+span.sfondo:hover > img{
+    filter: grayscale(100%) blur(5px);
+}
+span.sfondo:hover > a{
+    filter: grayscale(-100%) blur(-5px);
+    display: inline;
+    background-color: gainsboro;
+}
+span.sfondo{
+    height: 25vh;
+    background-size: cover;
+    display: inline-block;
+    margin: 1vh;
+}
+a{
+    position: relative;
+    display: none;
+    writing-mode: vertical-rl;
+    padding: 1px;
+    text-orientation: mixed;
+    transition: .7s display;
+    border-radius: 0 20% 20% 0;
+    cursor: pointer;
+}
+
+a:link{
+    position: absolute;
+    color:rgb(48, 48, 48);
+}
+a:visited{
+    color:rgb(48, 48, 48);
+}
+/*img:hover + button{
+    display: inline;
+}*/
+/*img::after{
+    content:"ciao";
+    color:white;
+    background-color: black;
+}*/
+
+div#visualizzatore{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    padding : 0;
+    margin: 0;
+    top: 0;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    z-index: 10;
+    transition: .5s display;
+    backdrop-filter: grayscale(100%) blur(5px);
+}
+
+button{
+    position: absolute;
+    font-size: 5ex;
+    left: 1%;
+    top:1%;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 15%;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    border:2px solid black;
+}
+div#visualizzatore > img{
+    position: relative;
+    height: 90%;
+    margin-top: 1%;
+}
+@media screen and (max-aspect-ratio: 1/1){
+    body{
+        font-size: 2em;
+        padding: 0;
+        padding-top: .5em;
+    }
+    div#visualizzatore{
+        width: 80vw;
+        height: fit-content;
+    }
+}
+@media screen and (prefers-color-scheme:light){
+    body{
+        background-color:rgb(236, 236, 236);
+    }
+    span.sfondo:hover > a{
+        background-color: rgb(32,32,32);
+        color:rgb(236, 236, 236);
+    }
+    a:link{
+        color:rgb(236,236,236);
+    }
+    a:visited{
+        color:rgb(236,236,236);
+    }
+}

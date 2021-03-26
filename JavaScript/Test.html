@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Video/Audio player</title>
+</head>
+<body>
+<p>Inserisci il link del file:<br></p>
+<input type="text" id="input">
+<input type="button" id="invia" value="Invia" onclick="JQuery("#Frame").src("file:///"+link());">
+<script src="jquery-3.3.1.min.js"></script>
+<script>function link(){
+
+	var stringa=String(JQuery("#input").val());
+    return stringa;
+};</script>
+<iframe src="file:///"+link(); id="Frame"></iframe>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <script>"use strict";</script>
+  <title>JavaScript</title>
+</head>
+<body>
+<button type="button" onclick="alert('Ciao!')">Cliccami</button><br>
+<a href="javascript:alert('Ciao!')">Cliccami</a>
+<input type="button" value="Lancia il prompt di prova"
+       onclick="window.prompt('Titolo del prompt','Testo facoltativo del prompt')" />
+<script>alert('ciao');
+/*si puo usare il codice script src="file.js o link.js"
+per implementare stringhe o librerie esterne*/
+var x=5; //variabili non dichiarabili per tipo, quindi si cambia tipo quando ci pare
+x=x+1;//variabile che diventa unendified, non identificata
+x+1;//incremento di 1, altre operazioni come c++ tipo x++ o x--
+x=3;//valore iniziale di x
+var y=x++;//prima viene dato a y il valore di x(3) e poi viene incrementato x
+y=++x;//prima viene incrementato x, poi viene assegnato il valore a y(4)
+//cosa simpatica
+var strumento="piano";
+strumento +="forte";//pianoforte :D
+</script>
+<script>
+  nplayer=prompt("inserisci il numero di player","");
+  document.write("numero di giocatori:",nplayer,"\n");
+  var nome= new Array();
+  for (var i = 0; i < nplayer; i++) {
+    nome[i]=prompt("inserisci il nome del player","nome");
+    document.write("player ",i,"=",nome[i],"\n");
+  }
+  var assassino= Math.floor(Math.random() * nplayer);
+  document.write("Assassino=",nome[assassino]);
+  </script>
+
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        style{
+            display: block;
+            white-space:pre-wrap; 
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Css fai da te</h1>
+        <p>puoi aggiungere altri attributi e modificare quelli già esistenti, ma non puoi aggiungere selettori, non so perché</p>
+        <style spellcheck="false" contenteditable="true">
+            h2{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color:white;
+            }
+            body{background-color:red}
+            input{
+                border: 1px solid white;
+                color:white;
+                border-radius: 1em;
+                background-color: red;
+                width: 50%;
+                height: 2em;
+            }
+            #emailerrata{
+                display: none;
+            }
+            #email:invalid + #emailerrata{
+                display: inline;
+            }
+            button{
+                color:red;
+                border-radius: 1em;
+                background-color: white;
+                width: 50%;
+                height: 2em;
+
+            }
+            div{
+                
+            }
+        </style>
+        <div>
+            <h2>finto login</h2>
+            <input type="email" placeholder="#email" id="email"> <p id="emailerrata">Fai schifo metti una email corretta</p><br>
+            <input type="password" placeholder="#password" id="password"><br>
+            <button>Log-In</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+body{
+    margin:0;
+    padding: 0;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+body *{
+    margin: 0;
+    padding: 1em;
+}
+button{
+    background: red;
+    border: 3px solid black;
+    transition: .5s;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+#main{
+    display:none;
+}
+#loading{
+    padding: 0;
+}
+#loading .container, #loading .container *{
+    padding: 0;
+    text-align: initial;
+}
+#loading .container{
+    height: 80vh;
+}
+
+#loading .container .ball{
+    animation: anim 1s infinite;
+}
+@keyframes anim{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform:rotate(720deg);
+    }
+}
+button:hover{
+    color:white;
+    border: 3px solid white;
+}
+
+img{
+    height: 50%;
+}
+
+.gen1{
+    background-image: linear-gradient(to right, red 33%,green 33%, green 66%, blue 66%);
+}
+.gen2{
+    background-image: linear-gradient(to top right, gold, white);
+}
+.gen3{
+    background-image: linear-gradient(to top left, darkred 33%, darkblue 33%, darkblue 66%, green 66%);
+}
+.gen4{
+    background:  linear-gradient(to top, rgb(49, 1, 49) 40%, rgba(0, 0, 0, 0) 40%), linear-gradient(to right, rgb(30, 30, 250) 50%, rgb(255, 131, 151) 50%);
+}
+.gen5{
+    background-image: linear-gradient(to top right, white 50%, black 50%);
+}
+.gen5 h1, .gen3 h1, .gen4 h1, .gen6 h1{
+    color: white;
+}
+.gen6{
+    background-image: linear-gradient(to bottom right, blue 50%, red 50%);
+}
+.gen7{
+    background-image: linear-gradient(to bottom right, white 5%, rgb(116, 193, 219) 30%, rgba(0,0,0,0) 100%), linear-gradient(to bottom left, white 5%, darkblue 30%, rgba(0,0,0,0) 100%);
+}
+.gen8{
+    background-image: 
+    linear-gradient(to bottom, white, white 60%, rgba(0,0,0,0) 100%),
+    linear-gradient(to right, rgb(121, 208, 205),  rgb(56, 108, 172)48%, rgb(181, 7, 89) 52%,  	rgb(215, 0, 41) 100%)
+                    ;
+}
+
+div#informazioni{
+    background-color: white;
+    border-radius: 1rem;
+    border: 3px solid black;
+    box-shadow: -1rem 0 10px 1em rgba(128, 128, 128, 0.212);
+}
+
+div#informazioni h1{
+    color: black;
+}
+#informazioni li{
+    border: 1px solid black;
+}
+li> a{
+    padding: 1ex 0 1ex 0;
+}
+li a a{
+    border-radius: 1ex;
+    padding: 1ex;
+    border: 1px solid black;
+    color:white;
+    margin: .5ex;
+}
+ul{
+    list-style-type: none;
+}
+.poison, .Veleno{
+    background-color: purple;
+    
+}
+.normal, .Normale{
+    background-color: rgb(179, 164, 164);
+    color:black;
+}
+
+.fire, .Fuoco{
+    background-color: rgb(255, 72, 0);
+}
+.fighting, .Lotta{
+    background-color: rgb(136, 0, 0);
+}
+.water, .Acqua{
+    background-color: rgb(47, 47, 255);
+}
+.flying, .Volante{
+    background-color: cornflowerblue;
+}
+.grass, .Erba{
+    background-color: forestgreen;
+}
+.electric, .Elettro{
+    background-color: gold;
+}
+.ground, .Terra{
+    background-color: rgb(139, 106, 23);
+}
+.psychic, .Psico{
+    background-color: rgb(255, 80, 168);
+}
+.rock, .Roccia{
+    background-color: rgb(116, 83, 0);
+}
+.ice, .Ghiaccio{
+    background-color: rgb(80, 252, 255);
+    color:black;
+}
+.bug, .Coleottero{
+    background-color: rgb(157, 189, 54);
+}
+.dragon, .Drago{
+    background-color: rgb(51, 51, 145);
+}
+.ghost, .Spettro{
+    background-color: indigo;
+}
+.dark, .Buio{
+    background-color: rgb(26, 26, 26);
+}
+.steel, .Acciaio{
+    background-color: rgb(146, 146, 146);
+}
+.fairy, .Folletto{
+    background-color: pink;
+}
